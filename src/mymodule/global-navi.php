@@ -1,8 +1,8 @@
 <div id="header-navi">
   <ul>
     <li><a href="http://futurismo.biz/">ホーム</a></li>
-    <li><a href="http://hmi-me.ciao.jp/futurismo_dev/sample-page">ハッカー未来派宣言</a></li>
-    <li><a href="http://hmi-me.ciao.jp/futurismo_dev/sitemaps">過去記事一覧</a></li>
+    <li><a href="http://futurismo.biz/sample-page">ハッカー未来派宣言</a></li>
+    <li><a href="http://futurismo.biz/futurismo_dev/sitemaps">過去記事一覧</a></li>
   </ul>
 </div>
 
