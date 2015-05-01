@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+/*
+ 見出し
+ */
+#main-contents h3{
+    position: relative; 
+    font-size: 1.143em;
+    font-weight: bold;
+    margin: 0 0 1.5em;
+    padding: 0.5em 0.5em 0.5em 2.0em;
+    border-bottom: 2px solid #B92A2C;
+}
+
+/* どうしても幅がずれるので微調整 */
+#main-contents h3 {
+    margin-top: 30px !important;    
+    margin-left: 0px !important;
+    margin-right: 0px !important;    
+}
+
+#main-contents h3:before{
+    content: "□";
+    font-size: 200%;
+    position: absolute;
+    color: #ff6b6e;
+    top: -0.8em;
+    left: 0.3em;
+    height: 12px;
+    width: 12px;
+}
+ 
+#main-contents h3:after{
+    content: "□";
+    font-size: 200%;
+    position: absolute;
+    color: #B92A2C;
+    top: -0.5em;
+    left: 0;
+    height: 12px;
+    width: 12px;
+}
+
+#main-contents h4{
+    position: relative;
+    color: #111;
+    font-size: 1.143em;
+    font-weight: bold;
+    margin: 0 0 1.5em;
+    padding: 0.5em 0.5em 0.5em 1.7em;
+    border-bottom: 3px solid #B92A2C;
+}
+ 
+#main-contents h4:before{
+    content: "";
+    position: absolute;
+    background: #d48789;
+    top: 0;
+    left: 0.4em;
+    height: 12px;
+    width: 12px;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+ 
+#main-contents h4:after{
+    content: "";
+    position: absolute;
+    background:#d26466;
+    top: 1.0em;
+    left: 0;
+    height: 8px;
+    width: 8px;
+    transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+}
+
+#main-contents h5{
+    margin: 0 0 1.5em;
+    padding: 0.5em;
+    border-left: 7px solid #B92A2C;
+    border-bottom: 1px dashed #B92A2C;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/*
+sharebar プラグイン 用の追加CSS
+http://iao.wktktravel.com/201211/sharebar_plugin.html
+*/
+#sharebar {
+    border-radius: 3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    box-shadow:3px 3px 3px rgba(0,0,0,0.4);
+    padding-top:10px !important;
+    padding-bottom:20px !important;
+    text-align:center;    
+}
+#sharebar li{
+    padding-top:10px !important;
+}
+
+/*------------------------------------------------------------
+  Header 用
+-------------------------------------------------------------*/
+.sticky_sns {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: url(./images/common/bg-dot.png) #333;
+  top: 0;
+  height: 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 310;
+}
+
+#sticky_footer {
+  background: url(./images/common/bg-dot.png) #333;
+  top: 0;
+  height: 35px;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1100px;
+  z-index: 900;
+}
+
+/* Social Icons */
+#sticky_footer #social_icons {
+  float: left; /* social icons positions */
+  margin-top: 5px;
+  padding: 0;
+  width: auto;
+  overflow:hidden;
+}
+
+#sticky_footer #social_icons li {
+  margin-right:5px; /* 12px is the space between each one of them */
+  margin-top: 1px; /* 12px is the space between each one of them */
+  float: left;
+  list-style:none;
+  _margin-right:0px; /* this is for IE6 only */
+  z-index: 999;
+}
+
+#sticky_footer #social_icons img {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  z-index: 999;
+}
+
+/*  Google Custom Search Settings */
+.google_search {
+  float: left;
+  margin: 5px auto;
+  overflow: hidden;
+  width: 140px;
+}
+
+#cse-search-box div {
+  padding: 0 !important;
+}
+
+#cse-search-box input[type="text"] {
+  font-size: 14px;
+  height: 30px;
+
+  padding: 0 !important;
+  width: 130px;
+  
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 0 5px #dddddd;
+  -moz-box-shadow: 0 0 5px #dddddd;
+  -webkit-box-shadow: 0 0 5px #dddddd;
+}
+
+#cse-search-box input[type="submit"] {
+  background: url("<?php bloginfo('template_url'); ?>/images/icon/search.png") no-repeat scroll 50% 50% #f9f9f9;
+  border: 0 none;
+  margin: 0 0 -10px -27px;
+  overflow: hidden;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  z-index: 999;
+  margin-top: 5px;
+}
+
+/*------------------------------------------------------------
+  はてなブックマーク ウィジェット 用
+-------------------------------------------------------------*/
+/*ヘッダーとフッターを非表示に*/
+.hatena-bookmark-widget-title {
+    display: none;
+}
+
+.hatena-bookmark-widget-footer {
+    display: none;
+}
+
+
+.hatena-bookmark-widget ul li a.hatena-bookmark-entrytitle {
+    padding: 0 10px 0 0;
+}
+
+
+/*フォント変更*/
+.hatena-bookmark-widget * {
+    font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',Helvetica,Arial,sans-serif !important;
+    font-size: 14.5px;
+    width: 300px;
+    border-bottom: none;
+}
+
+/*表組みの背景をなくす*/
+.hatena-bookmark-widget-body ul {
+    /* background: none repeat scroll 0 0 transparent !important; */
+}
+
+/*リスト全体*/
+.hatena-bookmark-widget-body ul {
+    border: medium none !important;
+    font-weight: normal !important;
+}
+
+/*個別のリスト*/
+.hatena-bookmark-widget-body ul li {
+    border: medium none !important;
+    list-style: none !important;
+}
+
+/*リンクの設定：色、フォントサイズ、行の幅*/
+a.hatena-bookmark-entrytitle, a.entrytitle {
+    color: #111 !important;
+    font-size: 13px !important;
+    line-height: 16px;
+}
+/*はてブ数リンク*/
+.hatena-bookmark-widget span.hatena-bookmark-count {
+    position: absolute;
+    top: 22px;
+    bottom: 3px;
+    right: 5px;
+}
+
+.hatena-bookmark-widget span.hatena-bookmark-count strong a {
+    color: #111 !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    text-decoration: none;
+    background: none repeat scroll 0 0 transparent !important;
+}
+
