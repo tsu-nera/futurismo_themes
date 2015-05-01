@@ -1,0 +1,18 @@
+#+OPTIONS: toc:nil
+#+TITLE: 賢威カスタマイズ
+
+* header.php
+** ファビコン
+   - Note taken on [2015-05-01 金 21:10]
+
+   ファビコンをアップロード後, header.php の以下を削除.
+
+#+begin_src html
+< link rel="shortcut icon" type="image/x-icon" href="< ?php bloginfo (`template_url'); ?>/favicon.ico" / >
+#+end_src
+
+   以下を挿入.
+   
+#+begin_src html
+< link rel="shortcut icon" href="画像 (.ico) ファイル" />
+#+end_src
