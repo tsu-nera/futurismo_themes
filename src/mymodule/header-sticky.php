@@ -1,12 +1,11 @@
-
 <!-- header menu --> 
 <div class='sticky_sns'>
   <div id='sticky_footer'>
     <ul id='social_icons'>
-      <li><a href="http://futurismo.biz/"><img src="<?php bloginfo ('template_url'); ?>/myimages/home.png" alt="Home" /></a></li>
-      <li><a href="https://twitter.com/tsu_nera"><img src="<?php bloginfo ('template_url'); ?>/myimages/twitter.png" alt="Twitter" /></a></li>
-      <li><a href="https://github.com/tsu-nera"><img src="<?php bloginfo ('template_url'); ?>/myimages/github.png" alt="gtihub" /></a></li>
-      <li><a href="http://futurismo.biz/feed"><img src="<?php bloginfo ('template_url'); ?>/myimages/feed.png" alt="RSS" /></a></li>
+      <li><a href="http://futurismo.biz/"><img src="<?php bloginfo('template_url'); ?>/myimages/home.png" alt="Home" /></a></li>
+      <li><a href="https://twitter.com/tsu_nera"><img src="<?php bloginfo('template_url'); ?>/myimages/twitter.png" alt="Twitter" /></a></li>
+      <li><a href="https://github.com/tsu-nera"><img src="<?php bloginfo('template_url'); ?>/myimages/github.png" alt="gtihub" /></a></li>
+      <li><a href="http://futurismo.biz/feed"><img src="<?php bloginfo('template_url'); ?>/myimages/feed.png" alt="RSS" /></a></li>
     </ul>
 
     <!-- Google serch -->
@@ -26,8 +25,8 @@
 
 <style type="text/css">
  .sticky_sns {
-   border: 1px solid rgba (0, 0, 0, 0.3);
-   background: url (./images/common/bg-dot.png) #333;
+   border: 1px solid rgba(0, 0, 0, 0.3);
+   background: url(./images/common/bg-dot.png) #333;
    top: 0;
    height: 40px;
    position: fixed;
@@ -36,7 +35,7 @@
  }
 
  #sticky_footer {
-   background: url (./images/common/bg-dot.png) #333;
+   background: url(./images/common/bg-dot.png) #333;
    top: 0;
    height: 35px;
    margin: 0 auto;
@@ -98,7 +97,7 @@
  }
 
  #cse-search-box input[type="submit"] {
-   background: url ("<?php bloginfo ('template_url'); ?>/images/icon/search.png") no-repeat scroll 50% 50% #f9f9f9;
+   background: url("<?php bloginfo('template_url'); ?>/images/icon/search.png") no-repeat scroll 50% 50% #f9f9f9;
    border: 0 none;
    margin: 0 0 -10px -27px;
    overflow: hidden;

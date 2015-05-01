@@ -1,4 +1,3 @@
-
 <div id="header-navi">
   <ul>
     <li><a href="http://futurismo.biz/">ホーム</a></li>
