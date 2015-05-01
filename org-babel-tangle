@@ -21,4 +21,4 @@ emacs -Q --batch \
      (mapc (lambda (file)
             (find-file (expand-file-name file \"$DIR\"))
             (org-babel-tangle)
-            (kill-buffer)) '($FILES)))"  2>&1 |grep tangled
+            (kill-buffer)) '($FILES)))" # 2>&1 |grep tangled
