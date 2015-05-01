@@ -1,0 +1,19 @@
+#+OPTIONS: toc:nil
+#+TITLE: Wordpress
+  おもに, Wordpress 系のノウハウを収集.
+
+* アフィリエイト
+** Google Adsense
+   
+*** 記事へのアドセンス追加方法
+    - HTML タグをコピーして貼り付ける
+    - more タグ<! – more –>を置換する
+    - プラグインを使用して挿入する
+    - functions.php でショートコードを設定し挿入する
+
+    本文中の H2 手前に挿入する
+    [[http://nelog.jp/adsense-before-h2][アドセンスを Wordpress 記事本文中に配置できる手軽でスマートな方法]]
+
+*** 二つ並べて表示
+    - [[http://newsba-nk.com/asense-double][アドセンスを横に 2 つ並べて表示する方法. ダブルレクタングルで収益アップだ! | にゅーすばんく]]
+
