@@ -9,7 +9,11 @@ CLEAN.include(["*/**/*.~","*/**/\#*"])
 FLAGS = "-R"
 BOOKMARKNAME  = "lolipop"
 LOCALDIR      = "src"
+MODULEDIR     = "src/mymodule"
+IMAGEDIR      = "src/myimages"
+
 REMOTEDIR     = "./futurismo_dev/wp-content/themes/src/mymodule"
+DEPLOYDIR     = "./wordpress/wp-content/themes/src/"
 
 BROWSER       = "firefox"
 # URL           = "http://futurismo.biz"
@@ -20,6 +24,23 @@ task :default => [:open]
 desc "pull files from remote server"
 task :pull => :clobber do
   if system( "ncftpget #{FLAGS} #{BOOKMARKNAME} #{LOCALDIR} #{REMOTEDIR}" )
+    puts "FTP finished. Access to #{URL}"
+  end
+end
+
+desc "Uplaod My files and images"
+task :deploy => [:images, :module]
+
+desc "Uplaod My images"
+task :images do
+  if system( "ncftpput #{FLAGS} #{BOOKMARKNAME} #{DEPLOYDIR} #{IMAGEDIR}" )
+    puts "FTP finished. Access to #{URL}"
+  end
+end
+
+desc "Uplaod My module"
+task :module do
+  if system( "ncftpput #{FLAGS} #{BOOKMARKNAME} #{DEPLOYDIR} #{MODULEDIR}" )  
     puts "FTP finished. Access to #{URL}"
   end
 end
