@@ -1,4 +1,6 @@
+* トップページを 2 カラムで表示
 
+#+begin_src php :tangle yes
 <div id="my-post">
   <?php while (have_posts ()) : the_post (); ?>
     
@@ -68,3 +70,6 @@
    /*   font-size: 24px !important; */
  }
 </style>
+#+end_src
+
+

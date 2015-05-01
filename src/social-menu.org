@@ -1,4 +1,4 @@
-
+#+begin_src php :tangle yes
 <!--  http://nelog.jp/social-share-links -->
 <!-- http://weboook.blog22.fc2.com/blog-entry-399.html -->
 <div id='social_menu'>
@@ -34,3 +34,5 @@
    float: left;
  }
 </style>
+#+end_src
+

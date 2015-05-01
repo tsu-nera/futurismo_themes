@@ -1,4 +1,4 @@
-
+#+begin_src php :tangle yes
 <div id="header-navi">
   <ul>
     <li><a href="http://futurismo.biz/">ホーム</a></li>
@@ -87,3 +87,6 @@
  }
 
 </style>       
+#+end_src
+
+

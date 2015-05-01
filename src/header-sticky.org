@@ -1,3 +1,5 @@
+#+begin_src php :tangle yes
+
 
 <!-- header menu --> 
 <div class='sticky_sns'>
@@ -110,3 +112,5 @@
    margin-top: 5px;
  }
 </style>   
+#+end_src
+
