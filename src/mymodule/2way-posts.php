@@ -6,7 +6,8 @@
       <div class="my-article1">
         <?php if(!has_post_thumbnail() || !has_thumbnail_silver_ratio()) { ?>
           <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
-            <img src="http://hmi-me.ciao.jp/futurismo_dev/wp-content/uploads/2015/04/2015-04-30-145319_366x251_scrot.png"></a>
+            <img src="<?php bloginfo('template_url');?>/myimages/futurismo-logo.png" alt="Futurismo-Logo" />
+          </a>
         <?php } else { ?>            
           <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php echo the_post_thumbnail(index); ?></a>
         <?php } ?>
@@ -19,7 +20,8 @@
       <div class="my-article2">
         <?php if(!has_post_thumbnail() || !has_thumbnail_silver_ratio()) { ?>
           <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
-            <img src="http://hmi-me.ciao.jp/futurismo_dev/wp-content/uploads/2015/04/2015-04-30-145319_366x251_scrot.png"></a>
+            <img src="<?php bloginfo('template_url');?>/myimages/futurismo-logo.png" alt="Futurismo-Logo" />
+          </a>
         <?php } else { ?>            
           <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php echo the_post_thumbnail(index); ?></a>
         <?php } ?>
