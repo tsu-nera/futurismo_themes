@@ -27,6 +27,7 @@
  .sticky_sns {
    border: 1px solid rgba(0, 0, 0, 0.3);
    background: url(./images/common/bg-dot.png) #333;
+
    top: 0;
    height: 40px;
    position: fixed;

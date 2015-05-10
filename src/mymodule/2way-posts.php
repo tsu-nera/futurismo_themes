@@ -11,7 +11,12 @@
         <?php } else { ?>            
           <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php echo the_post_thumbnail(index); ?></a>
         <?php } ?>
-        <div id="img-box-mini"><h2><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2></div>
+        <div id="img-box-mini">
+          <h2>
+            <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?>></a>
+            <a href='http://b.hatena.ne.jp/entry/<?php the_permalink(); ?>'><img src='http://b.hatena.ne.jp/entry/image/<?php the_permalink(); ?>' alt='' /></a>
+          </h2>
+        </div>        
       </div>
       
       <! -- 記事2つめ -->
@@ -25,7 +30,12 @@
         <?php } else { ?>            
           <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php echo the_post_thumbnail(index); ?></a>
         <?php } ?>
-        <div id="img-box-mini"><h2><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2></div>        
+        <div id="img-box-mini">
+          <h2>
+            <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?>></a>
+            <a href='http://b.hatena.ne.jp/entry/<?php the_permalink(); ?>'><img src='http://b.hatena.ne.jp/entry/image/<?php the_permalink(); ?>' alt='' /></a>
+          </h2>
+        </div>        
       </div>
       <! -- 記事 おわり--> 
     </div>              
@@ -67,4 +77,4 @@
    width: 100%;
    /*   font-size: 24px !important; */
  }
-</style>
+ </style>
