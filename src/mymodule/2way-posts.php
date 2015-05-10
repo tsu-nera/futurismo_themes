@@ -13,7 +13,7 @@
         <?php } ?>
         <div id="img-box-mini">
           <h2>
-            <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?>></a>
+            <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
             <a href='http://b.hatena.ne.jp/entry/<?php the_permalink(); ?>'><img src='http://b.hatena.ne.jp/entry/image/<?php the_permalink(); ?>' alt='' /></a>
           </h2>
         </div>        
@@ -32,7 +32,7 @@
         <?php } ?>
         <div id="img-box-mini">
           <h2>
-            <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?>></a>
+            <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
             <a href='http://b.hatena.ne.jp/entry/<?php the_permalink(); ?>'><img src='http://b.hatena.ne.jp/entry/image/<?php the_permalink(); ?>' alt='' /></a>
           </h2>
         </div>        
