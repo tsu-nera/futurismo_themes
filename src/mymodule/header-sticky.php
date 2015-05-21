@@ -19,7 +19,14 @@
       <!-- <script type="text/javascript" src="http://www.google.co.jp/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script> -->
     </div>
     <!-- Google Search End -->
+
+    <!-- メニュー -->
+    <!-- http://www.webdesignleaves.com/wp/wordpress/144/ -->
+    <div id="header-nav">
+      <?php wp_nav_menu(array('theme_location' => 'header_nav')); ?>
+    </div><!-- end of #header-nav -->
   </div>
+
 </div>
 <!-- header menu end --> 
 
@@ -76,6 +83,7 @@
    margin: 5px auto;
    overflow: hidden;
    width: 140px;
+   margin-right: 30px;
  }
 
  #cse-search-box div {
@@ -109,4 +117,65 @@
    z-index: 999;
    margin-top: 5px;
  }
+
+header-nav ul#menu-nav {
+   height: 40px;
+}
+                     
+#header-nav ul li.menu-item {
+  position: relative; /*z-indexの指定や子要素の基準とするために指定*/
+  z-index: 1; /*ドロップダウンしたメニューが隠れないように*/
+  float: left; /*親メニューは横1列に並べる*/
+  list-style: none;                        
+  width: 140px;                     
+}
+#header-nav ul li.menu-item a{ 
+  display: block;    /*要素の幅いっぱいにするために指定*/
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+  font-size: 12px; font-size: 1.2rem; 
+  text-decoration: none;
+  text-align: center;                     
+}
+/*マウスオーバー時等にメニューの色を変更*/
+#header-nav ul li.menu-item a:hover,   /*マウスオーバー時*/
+#header-nav ul li.current-menu-item a,     /*現在表示されているページのメニュー*/
+#header-nav ul li.current-menu-parent a,  /*現在表示されているページの親のメニュー*/
+#header-nav ul li.current-post-ancestor a {
+  color: #000;    
+}
+ 
+#header-nav ul li.menu-item a:hover {
+  background-color: #EEE;  /*マウスオーバー時に背景色を変更*/
+}
+ 
+#header-nav ul li ul.sub-menu {
+  display: none;  /*サブメニューは最初は非表示にしておく*/
+  position: absolute;  /*絶対配置にしておかないとうまくいかない*/
+  top: 40px;
+  left: 0;
+  border-top: 1px solid #EEE;  /*ボーダートップを指定*/
+  width: 140px;
+}
+                     
+#header-nav ul li:hover ul.sub-menu {
+  display: block;    /*マウスオーバー時にサブメニューを表示する*/
+}
+#header-nav ul li ul.sub-menu li{
+  float: none;  /*サブメニューはフロートさせないので解除*/
+  padding: 0;   /*親メニューのパディングを解除*/
+}
+#header-nav ul li ul.sub-menu li a {  
+  border: 1px solid #eee;  /*ボーダーの指定*/
+  border-top: none;        /*ボーダートップは重なって太くなるので解除。一番上は ul 要素に指定*/
+  padding: 0 10px;
+  background-color: #FFF;
+  color: #666;
+}
+/*サブメニューで現在表示されているページのリンクの色を変更する*/
+#header-nav ul li ul.sub-menu li.current-menu-item a {
+  display: block;
+  background-color: #FBF3FE; 
+} 
 </style>   

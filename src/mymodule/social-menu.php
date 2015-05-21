@@ -25,9 +25,14 @@
   </ul>
 </div>
 
-<p style="clear:both"></p> 
+<p style="clear:both"></p>
 
 <style type="text/css">
+ #social_menu ul {
+   margin-left: 0.8em;
+
+ }
+ 
  #social_menu li {
    list-style:none;
    float: left;

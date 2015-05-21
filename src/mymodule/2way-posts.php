@@ -8,12 +8,13 @@
           <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
             <img src="<?php bloginfo('template_url');?>/myimages/futurismo-logo.png" alt="Futurismo-Logo" />
           </a>
-        <?php } else { ?>            
-          <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php echo the_post_thumbnail(index); ?></a>
+        <?php } else { ?>
+          <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php echo the_post_thumbnail(index); ?></a>          
         <?php } ?>
         <div id="img-box-mini">
           <h2>
-            <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+            <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></br>
+            <span style="font-size:smaller"><?php the_time(get_option( 'date_format')); ?></span>            
             <a href='http://b.hatena.ne.jp/entry/<?php the_permalink(); ?>'><img src='http://b.hatena.ne.jp/entry/image/<?php the_permalink(); ?>' alt='' /></a>
           </h2>
         </div>        
@@ -32,7 +33,8 @@
         <?php } ?>
         <div id="img-box-mini">
           <h2>
-            <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+            <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></br>
+            <span style="font-size:smaller"><?php the_time(get_option( 'date_format')); ?></span>
             <a href='http://b.hatena.ne.jp/entry/<?php the_permalink(); ?>'><img src='http://b.hatena.ne.jp/entry/image/<?php the_permalink(); ?>' alt='' /></a>
           </h2>
         </div>        
@@ -57,10 +59,22 @@
  #my-post .my-article1,
  #my-post .my-article2 {
    position: relative;
-   
    float: left;
    width: 540px;
-   margin-right: 20px;
+   margin-left: 5px;   
+   margin-right: 5px;
+ }
+ 
+ #my-post a img {
+  filter:alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+ }
+ 
+ #my-post a:hover img, h2 {
+   filter:alpha(opacity=80);
+   -moz-opacity: 0.8;
+   opacity: 0.8;
  }
 
  #img-box-mini {
